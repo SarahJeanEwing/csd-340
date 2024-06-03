@@ -2,9 +2,12 @@
 /* 06/03/2024 */
 /* Module 3.2 Assignment */
 
+body {
+  background-color: CCB3D9;
+}
+  
 html {
   color: 010819;
-  background-color: CCB3D9;
 }
 
 #container {
