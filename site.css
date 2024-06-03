@@ -2,6 +2,11 @@
 /* 06/03/2024 */
 /* Module 3.2 Assignment */
 
+html {
+  color: 010819;
+  background-color: CCB3D9;
+}
+
 #container {
   top-margin: 50px;
   left-margin: 100px;
