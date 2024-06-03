@@ -2,16 +2,38 @@
 /* 06/03/2024 */
 /* Module 3.2 Assignment */
 
+#container {
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
 body {
-  background-color: CCB3D9;
+  background-color: #FFFFFF;
+}
+
+h1, h2, h3, h4 {
+   background-color: #250933;
+   color: #FFFFFF;
+   border: 1px solid #D6A800;
+   padding: 10px;
 }
   
 html {
-  color: 010819;
+  color: #250933;
 }
 
-#container {
-  top-margin: 50px;
-  left-margin: 100px;
-  right-margin: 100px;
+a {
+   text-decoration: none;
+   color: #250933;
+}
+
+a:hover {
+  background-color: #250933;
+  color: #FFFFFF;
+}
+
+a:visited {
+  background-color: #F4E8FD;
+  color: #5C4800;
 }
