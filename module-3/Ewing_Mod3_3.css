@@ -10,7 +10,10 @@ h3 {
    font-weight: 500;
 }
 
-#column-1, #column-2 {   width: 45%;   float: left;   margin: 10px;
+#column-1, #column-2 {
+   width: 45%;
+   float: left;
+   margin: 10px;
    font-weight: 300;
    padding: 10px;
    border-radius: 15px;
@@ -28,6 +31,7 @@ h3 {
    list-style-type: upper-roman;
 }
 
+/* I omitted float:right here to make the page look more like the example */
 #footer {
   width: 100%;
   margin-top: 60%;
