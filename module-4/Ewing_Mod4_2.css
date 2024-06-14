@@ -1,0 +1,53 @@
+/* Sarah Ewing */
+/* 06/14/2024 */
+/* Module 4.2 Assignment */
+
+html {
+   color: #250933;
+}
+
+/* directions said margin-top 10% */
+/* but changed it to 5% to make it look like the example */
+#image-gallery {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #F4E8FD;
+  padding: 10px;
+  margin-top: 5%;
+}
+
+#book {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+}
+
+h1, h3, figure {
+   text-align: center;
+}
+
+figcaption {
+   font-style: italic;
+   font-size: .75em;
+}
+
+#footer {
+  width: 100%;
+  margin-top: 100px;
+  text-align:right;
+  margin-bottom: 20px;
+}
+
+img {
+   height:300px;
+   width:200px;
+}
+
+a {
+   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
