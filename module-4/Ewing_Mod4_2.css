@@ -7,13 +7,13 @@ html {
 }
 
 /* directions said margin-top 10% */
-/* but changed it to 5% to make it look like the example */
+/* but changed it to 3% to make it look like the example */
 #image-gallery {
   display: grid;
   grid-template-columns: auto auto auto;
   background-color: #F4E8FD;
   padding: 10px;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 #book {
@@ -34,7 +34,7 @@ figcaption {
 
 #footer {
   width: 100%;
-  margin-top: 100px;
+  margin-top: 50px;
   text-align:right;
   margin-bottom: 20px;
 }
