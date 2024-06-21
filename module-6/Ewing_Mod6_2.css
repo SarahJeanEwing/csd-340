@@ -1,0 +1,92 @@
+/* Sarah Ewing */
+/* 06/18/2024 */
+/* Module 6.2 Assignment */
+
+header {
+    background-color: #360E48;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #360E48;
+    border-bottom: 15px solid #b2b2b2;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: #DBB2F0;
+    color: #000000;
+}
+
+#container {
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 10px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 50%;
+    padding: 10px;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 2em;
+    color: #360E48;
+    font-weight: 400;
+}
+
+.card-content {
+    padding: 2px 16px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Directions said to do position:absolute, but */
+/* it was removed to make it look more like the example */
+footer {
+    background-color: #360E48;
+    margin-bottom: 0;
+    width: 100%;
+    color: #FFFFFF;
+    weight: 400;
+    float: right;
+    padding-right: 10px;
+    font-style: italic;
+    text-align: right;
+    margin-top: 200px;
+    padding: 15px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+p {
+   margin: 0;
+}
