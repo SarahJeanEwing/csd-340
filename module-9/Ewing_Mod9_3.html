@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- Sarah Ewing -->
+<!-- 07/01/2024 -->
+<!-- Module 9.3 Assignment -->
+<html lang="en">
+  <head>
+    <title>CSD 340 Development with HTML and CSS</title>
+    <meta name="description" content="Module 9.3 Assignment">
+    <meta name="keywords" content="assignment, html, css">
+    <meta name="robots" content="nofollow">
+    <meta name="author" content="Sarah Ewing">
+    <script>
+        var firstVariableValue = "penny";
+        var secondVariableValue = "dollar";
+        var thirdVariableValue = "pearls";
+        var fourthVariableValue = "stars";
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Assignment 9.3: JavaScript - Part 1</h1>
+      <h2>"The Clock Man" by Shel Silverstein</h2>
+      <p>“How much will you pay for an extra day?”<br>
+	 The clock man asked the child.<br>
+         “Not one <span id = "penny">_________</span>,” the answer came,<br>
+         “For my days are as many as smiles.”</p>
+
+      <p>“How much will you pay for an extra day?”<br>
+         He asked when the child was grown.<br>
+         “Maybe a <span id = "dollar">_________</span> or maybe less,<br>
+         For I’ve plenty of days of my own.”</p>
+
+      <p>“How much will you pay for an extra day?”<br>
+         He asked when the time came to die.<br>
+         “All of the <span id = "pearls">_________</span> in all of the seas,<br>
+         And all of the <span id = "stars">_________</span> in the sky.”</p>
+
+           <button type="button"
+             onclick="document.getElementById('penny').innerHTML = firstVariableValue">penny</button> <br>  
+           <button type="button"
+             onclick="document.getElementById('dollar').innerHTML = secondVariableValue">dollar</button> <br>  
+           <button type="button"
+             onclick="document.getElementById('pearls').innerHTML = thirdVariableValue">pearls</button> <br>  
+           <button type="button"
+             onclick="document.getElementById('stars').innerHTML = fourthVariableValue">stars</button> <br>  
+    </div><!-- end container -->
+  </body>
+</html>
