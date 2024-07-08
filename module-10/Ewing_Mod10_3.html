@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- Sarah Ewing -->
+<!-- 07/08/2024 -->
+<!-- Module 10.3 Assignment -->
+<html lang="en">
+  <head>
+    <title>CSD 340 Development with HTML and CSS</title>
+    <meta name="description" content="Module 10.3 Assignment">
+    <meta name="keywords" content="assignment, html, css">
+    <meta name="robots" content="nofollow">
+    <meta name="author" content="Sarah Ewing">
+    <script>
+	function changePic() {
+	    document.getElementById("pic").src = "images/ghostboo.jpg";
+	}
+    </script>
+    <script>
+	function resetPic() {
+	    document.getElementById("pic").src = "images/flowers.jpeg";
+	}
+    </script>
+  </head>
+  <body>
+    <div id="container" style="text-align: center;">
+        <h1>Assignment 10.3: JavaScript - Part 2</h1>
+	<img id="pic" src="images/flowers.jpeg" alt="Flowers" width="500" height="500">
+	<br>
+	<button onclick="changePic()">CLICK HERE TO GET A SCARE</button>
+	<br>
+	<button onclick="resetPic()">RESET</button>
+    </div><!-- end container -->
+  </body>
+</html>
