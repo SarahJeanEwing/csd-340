@@ -14,20 +14,12 @@
 	    document.getElementById("pic").src = "images/ghostboo.jpg";
 	}
     </script>
-    <script>
-	function resetPic() {
-	    document.getElementById("pic").src = "images/flowers.jpeg";
-	}
-    </script>
   </head>
   <body>
     <div id="container" style="text-align: center;">
         <h1>Assignment 10.3: JavaScript - Part 2</h1>
-	<img id="pic" src="images/flowers.jpeg" alt="Flowers" width="500" height="500">
-	<br>
-	<button onclick="changePic()">CLICK HERE TO GET A SCARE</button>
-	<br>
-	<button onclick="resetPic()">RESET</button>
+	<img id="pic" src="images/flowers.jpeg" alt="Flowers" width="500" height="500" onclick="changePic()">
+	<h3>CLICK THE IMAGE TO GET A SCARE</h3>
     </div><!-- end container -->
   </body>
 </html>
