@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- Sarah Ewing -->
+<!-- 07/15/2024 -->
+<!-- Module 11.2 Assignment -->
+<html lang="en">
+<head>
+    <title>CSD 340 Development with HTML and CSS</title>
+    <meta name="description" content="Module 11.2 Assignment">
+    <meta name="keywords" content="assignment, html, css">
+    <meta name="robots" content="nofollow">
+    <meta name="author" content="Sarah Ewing">
+    <script>
+        const list = [];
+
+        function addItem() {
+            const input = document.getElementById("input").value;
+            list.push(input);
+            document.getElementById('input').value='';
+            alert("Item: " + input + " added at index " + list.indexOf(input))
+        }
+
+        function deleteLastItem() {
+            if (list.length > 0) {
+                const removedItem = list.pop();
+                alert("Item: " + removedItem + " removed.");
+            } else {
+                alert("The list is empty. Nothing to remove.");
+            }
+            displayList();
+        }
+
+        function displayList() {
+            const listOutput = document.getElementById("listOutput");
+            listOutput.innerHTML = "";
+
+            for (const item of list) {
+                const li = document.createElement("li");
+                const index = list.indexOf(item) + 1;
+                li.textContent = "Item " + index + " = " + item;
+                listOutput.appendChild(li);
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+      <h1>Assignment 11.2: JavaScript - Part 3</h1>
+      <p>This is an interactive To Do List.  Type in your first item in the text box, then click Add.  Click the Display button to see current items in the list.  Click on Delete Last Entry if you'd like to remove the last entry.</p>
+    <input type="text" id="input">
+    <button onclick="addItem()">Add</button>
+    <button onclick="deleteLastItem()">Delete Last Entry</button>
+    <button onclick="displayList()">Display</button>
+    <hr>
+    <ul id="listOutput" style="list-style-type:none;"></ul>
+
+</body>
+</html>
