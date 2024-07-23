@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- Sarah Ewing -->
+<!-- 07/23/2024 -->
+<!-- Module 12.2 Assignment -->
+<html lang="en">
+  <head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="Ewing_Mod12_2.css">
+    <meta name="description" content="Module 12.2 Assignment">
+    <meta name="keywords" content="assignment, html, css">
+    <meta name="robots" content="nofollow">
+    <meta name="author" content="Sarah Ewing">
+    <script>
+	const bookList = ["Anna Karenina by Leo Tolstoy", "Madame Bovary by Gustave Flaubert", "War and Peace by Leo Tolstoy", "The Great Gatsby by F. Scott Fitzgerald", "Lolita by Vladimir Nabokov", "Middlemarch by George Eliot", "Adventures of Huckleberry Finn by Mark Twain", "The Stories of Anton Chekhov by Anton Chekhov", "In Search of Lost Time by Marcel Proust", "Hamlet by William Shakespeare"]
+        function orderBottomToTop() {
+            const listOutput = document.getElementById("listOutput");
+            listOutput.innerHTML = "";
+	    for (var i = bookList.length - 1; i >= 0; i--) {
+                const li = document.createElement("li");
+		const index = i + 1
+                li.textContent = index + ". " + bookList[i]
+                listOutput.appendChild(li);
+	    }
+
+        }
+        
+
+        function orderTopToBottom() {
+            const listOutput = document.getElementById("listOutput");
+            listOutput.innerHTML = "";
+
+            for (var i = 0; i < bookList.length; i++) {
+                const li = document.createElement("li");
+		const index = i + 1
+                li.textContent = index + ". " + bookList[i];
+                listOutput.appendChild(li);
+            }
+        }
+
+
+        window.onload = orderTopToBottom;
+    </script>
+  </head>
+  <div id="container">
+  <h1>Assignment 12.2: JavaScript - Part 4</h1>
+  <div id="column-1">
+     <h3>Top 10 Favorite Books</h3>
+     <button onclick="orderTopToBottom()">Top to Bottom</button>
+     <button onclick="orderBottomToTop()">Bottom to Top</button>
+     <hr>
+        <ul id="listOutput" style="list-style-type:none;"></ul>
+  </div>
+  <div id="column-2">
+     <h3>5 Things I’ve Learned Since the Course Started</h3>
+        <ol>
+           <li>In css, you use "." for classes and "#" of ids</li>
+           <li>The bigger the heading number (h1 to h6), the smaller the size of the heading</li>
+           <li>The "a" in html is used for hyperlinks and the "a" is for anchor</li>
+           <li>There are three ways to name a color: RGB values, hex codes, and color names</li>
+           <li>An input of type=password will create a text box where the typed letters are blocked out</li>
+        </ol>
+  </div>
+  <div id="footer">
+     <a href="../index.html">back to Landing page</a>
+  </div>
+
+  </div><!-- end container -->
+</html>

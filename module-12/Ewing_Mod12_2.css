@@ -1,0 +1,48 @@
+/* Sarah Ewing */
+/* 07/23/2024 */
+/* Module 12.2 Assignment */
+
+h1 {
+   text-align: center;
+}
+
+h3 {
+   font-weight: 500;
+}
+
+#column-1, #column-2 {
+   width: 45%;
+   float: left;
+   margin: 10px;
+   font-weight: 300;
+   padding: 10px;
+   border-radius: 15px;
+}
+
+#column-1 {
+   border: 1px solid red;
+}
+
+#column-2 {
+   border: 1px dashed red;
+}
+
+#column-2 ol {
+   list-style-type: upper-roman;
+}
+
+/* I omitted float:right here to make the page look more like the example */
+#footer {
+  width: 100%;
+  margin-top: 60%;
+  text-align:right;
+  margin-bottom: 20px;
+}
+
+a {
+   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
